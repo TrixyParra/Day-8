@@ -1,7 +1,47 @@
 body {
-    background-color: moccasin;
+    background-color: tan;
+    margin: auto;
+    padding: auto;
 }
 
-h1 {
+.container {
+    width: 1250px;
+    background-color: moccasin;
+    margin: auto;
+    padding: 15px;
+    height: 1000px;
+}
+
+/* Keeps everything in place regardless of margin or padding, etc. */
+* {
+    box-sizing: border-box;
+}
+
+/* 4 columns that float next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+    position: sticky;
+    top: 0px;
+}
+
+h1, h2 {
     text-align: center;
+}
+
+p {
+    text-align: justify;
 }
